@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  background: white;
+}
+
+.main-nav {
+  min-height: 10vh;
+  margin: auto;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__title, .main-menu {
+  font-size: 1.5rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.main-menu {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-menu__link a {
+  color: black;
+  text-decoration: none;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.main-menu__bubble {
+  display: none;
+  position: absolute;
+  z-index: -2;
+  background: -webkit-gradient(linear, left bottom, right top, from(#c0392b), to(#8e44ad));
+  background: linear-gradient(to right top, #c0392b, #8e44ad);
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+section {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section__title {
+  font-size: 5rem;
+  color: white;
+}
+
+.home {
+  background: -webkit-gradient(linear, left bottom, right top, from(#c0392b), to(#8e44ad));
+  background: linear-gradient(to right top, #c0392b, #8e44ad);
+}
+
+.projects {
+  background: -webkit-gradient(linear, left bottom, right top, from(#159957), to(#155799));
+  background: linear-gradient(to right top, #159957, #155799);
+}
+
+.contacts {
+  background: -webkit-gradient(linear, left bottom, right top, from(#30e8bf), to(#ff8235));
+  background: linear-gradient(to right top, #30e8bf, #ff8235);
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Navbar</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css\style.css">
+</head>
+
+<body>
+	<header class="header">
+		<nav class="main-nav">
+			<h1 class="main__title">
+				Hello world
+			</h1>
+			<ul class="main-menu">
+				<li class="main-menu__link"><a data-page="home" href="#home">Главная</a></li>
+				<li class="main-menu__link"><a data-page="projects" href="#project">Проекты</a></li>
+				<li class="main-menu__link"><a data-page="contacts" href="#contacts">О нас</a></li>
+				<div class="main-menu__bubble"></div>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section data-index="0" class="home" id="home">
+			<h2 class="section__title">Главная</h2>
+		</section>
+		<section data-index="1" class="projects" id="project">
+			<h2 class="section__title">Проекты</h2>
+		</section>
+		<section data-index="2" class="contacts" id="contacts">
+			<h2 class="section__title">О нас</h2>
+		</section>
+	</main>
+
+	<script src="js/app.js"></script>
+</body>
+
+</html>
